@@ -2,9 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
 
 
-h1, h2{
+h1, h2, p{
     font-family: "Montserrat";
 }
+
+h3, p{
+    color: #fffafa;
+}
+
 
 /*Navigation/Header Area*/
 
@@ -12,9 +17,6 @@ h1, h2{
     background-color: #0a0a0A;
 }
 
-h1, h2{
-    color: #fffafa;
-}
 
 /*Hero Container/Intro Area*/
 
@@ -23,14 +25,14 @@ h1, h2{
 }
 
 @media (min-width:768px) {
-    .hero-container h1, h2{
-        margin-left: 3em;
+    .hero-container h3{
+        margin-left: 1em;
     }
 }
 
 @media (min-width:768px) {
     .hero-pic img{
-        margin-right: 5em;
+        margin-right: 8em;
     }
 }
 
@@ -38,4 +40,19 @@ h1, h2{
     .logo-pic img{
         margin-left: 4em;
     }
+}
+@media (min-width:768px) {
+    .logo-text p{
+        margin-right: 3em;
+    }
+}
+
+/*Skills Container Area*/
+
+.skills-container{
+    background-color: #0a0a0A;
+}
+
+.skills-container h1{
+    color: #fffafa;
 }

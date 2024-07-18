@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+
+h1, h2{
+    font-family: "Montserrat";
+}
+
+/*Navigation/Header Area*/
+
+.header-container, .navbar{
+    background-color: #0a0a0A;
+}
+
+h1, h2{
+    color: #fffafa;
+}
+
+/*Hero Container/Intro Area*/
+
+.hero-container{
+    background-color: #0a0a0A;
+}
+
+@media (min-width:768px) {
+    .hero-container h1, h2{
+        margin-left: 3em;
+    }
+}
+
+@media (min-width:768px) {
+    .hero-pic img{
+        margin-right: 5em;
+    }
+}
+
+@media (min-width:768px) {
+    .logo-pic img{
+        margin-left: 4em;
+    }
+}

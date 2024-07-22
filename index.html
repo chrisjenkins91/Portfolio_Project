@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/bootstrap.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!--Header Container/Navigation-->
@@ -62,53 +66,114 @@
             </div>
         </div>
     </nav>  <!--Beginning of Hero Area-->
-    <div class="hero-container pt-5 container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-7 mt-3 text-center text-md-start">
-                <h3 class="text-break text-nowrap lh-base display-4">Christopher Jenkins</h3><!--(Text Break) stops the page layout from messing up if the text is too long-->
-                <h3 class="text-break text-nowrap lh-base display-4">Full Stack Developer</h3>
+    <div class="hero-container container-fluid">
+        <div class="row d-flex align-items-center">
+            <div class="col-12 col-md-7 col-lg-6 text-center text-md-start">
+                <h1 class="text-break lh-base">Chris Jenkins</h1><!--(Text Break) stops the page layout from messing up if the text is too long-->
+                <h1 class="text-break lh-base">Junior Developer</h1>
+                <h2 class="text-break">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime in, laudantium perspiciatis</h2>
             </div>
-            <div class="hero-pic col-12 col-md-5 mt-3 text-center text-md-end">
-                <img src="img/Chris_Portriat.JPG" alt="" class="rounded-pill img-fluid" width="200">
+            <div class="hero-pic col-12 col-md-5 col-lg-6 mt-3 text-center text-md-end">
+                <img src="img/Chris_portriat2.jpg" alt="" class="border border-3 border-white rounded-pill img-fluid" width="450">
             </div>
-            <div class="col-12 col-md-7">
-                <div class="logo-pic col-12 mt-4 text-center text-md-start">
-                    <img src="img/Ceege Logo PNG.png" alt="" class="img-fluid" width="200">
+            <div class="logo-row d-flex align-items-center row">
+                <div class="col-12 col-md-7">
+                    <div class="logo-pic text-center text-md-start">
+                        <img src="img/Ceege Logo PNG.png" alt="" class="logo img-fluid" width="450">
+                    </div>
+                </div>
+                <div class="logo-text col-12 col-md-5 col-lg-5">
+                    <p class="text-break text-center text-md-start">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga atque facilis eos! Ipsum eius quisquam maiores nam rerum ad, asperiores, repellendus, nobis officiis sint labore id? Sit non facere blanditiis?
+                    </p>
                 </div>
             </div>
-            <div class="logo-text col-12 col-md-5 mt-5">
-                <p class="text-break text-center text-md-start lead">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga atque facilis eos! Ipsum eius quisquam maiores nam rerum ad, asperiores, repellendus, nobis officiis sint labore id? Sit non facere blanditiis?
-                </p>
-            </div>
         </div>
-    </div>
+    </div><!--Beginning of Skills Container-->
     <div class="skills-container container-fluid">
         <div class="row">
             <div class="col-12 col-md-12 text-center mt-5">
                 <h1 class="display-5">SKILLS</h1>
             </div>
+        </div><!--Cards Columns-->
+        <div class="row p-5">
+            <div class="col-sm-12 col-md-4 mb-5">
+                <div class="card border-success border-5 border-rounded">
+                    <img src="img/html icon.png" alt="" class="img-fluid card-img-top" width="100">
+                        <div class="card-body bg-secondary">
+                            <h6 class="card-title text-center">HTML</h6>
+                            <p class="card-text text-dark">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id facilis tempora atque, quam iure vel quaerat quas odit qui dolor rem, maxime culpa inventore labore molestias totam aspernatur earum consequatur.
+                            </p>
+                            <button class="btn btn-sm btn-success">Lets Go</button>    
+                        </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 mb-5">
+                <div class="card border-primary border-5">
+                    <img src="img/css logo.png" alt="" class="img-fluid card-img-top" width="100">
+                        <div class="card-body bg-secondary">
+                            <h6 class="card-title text-center">CSS</h6>
+                            <p class="card-text text-dark">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id facilis tempora atque, quam iure vel quaerat quas odit qui dolor rem, maxime culpa inventore labore molestias totam aspernatur earum consequatur.
+                            </p>
+                            <button class="btn btn-sm btn-info">Lets Go</button>    
+                        </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 mb-5">
+                <div class="card border-warning border-5">
+                    <img src="img/javascript_logo-removebg-preview.png" alt="" class="img-fluid card-img-top" width="100">
+                        <div class="card-body bg-secondary">
+                            <h6 class="card-title text-center">JavaScript</h6>
+                            <p class="card-text text-dark">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id facilis tempora atque, quam iure vel quaerat quas odit qui dolor rem, maxime culpa inventore labore molestias totam aspernatur earum consequatur.
+                            </p>
+                            <button class="btn btn-sm btn-warning">Lets Go</button>    
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-5">
+            <div class="col-sm-12 col-md-6 mb-5">
+                <div class="card border-success border-5 border-rounded">
+                    <img src="img/html icon.png" alt="" class="img-fluid card-img-top" width="100">
+                        <div class="card-body bg-secondary">
+                            <h6 class="card-title text-center">Javascript</h6>
+                            <p class="card-text text-dark">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id facilis tempora atque, quam iure vel quaerat quas odit qui dolor rem, maxime culpa inventore labore molestias totam aspernatur earum consequatur.
+                            </p>
+                            <button class="btn btn-sm btn-success">Lets Go</button>    
+                        </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 mb-5">
+                <div class="card border-primary border-5">
+                    <img src="img/css logo.png" alt="" class="img-fluid card-img-top" width="100">
+                        <div class="card-body bg-secondary">
+                            <h6 class="card-title text-center">Bootstrap</h6>
+                            <p class="card-text text-dark">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id facilis tempora atque, quam iure vel quaerat quas odit qui dolor rem, maxime culpa inventore labore molestias totam aspernatur earum consequatur.
+                            </p>
+                            <button class="btn btn-sm btn-info">Lets Go</button>    
+                        </div>
+                </div>
+            </div>
+    </div> 
+    <div class="projects-container container-fluid mt-5">
+        <div class="row">
+            <div class="col-12 col-md-12 text-center">
+                <h1 class="display-5">PROJECTS</h1>
+            </div>
         </div>
         <div class="row">
-            <div class="card col-12 col-md-4 text-center text-md-start mt-5">
-                <img src="https://www.shareicon.net/data/512x512/2015/09/04/95596_html_512x512.png" alt="" class="img-fluid card-img-top" width="250">
-                <div class="card-body">
-                    <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas maxime nulla quisquam minima ipsum numquam possimus obcaecati unde iure voluptatum deserunt, aperiam quibusdam ipsa, illo quidem porro magnam. Vel, dolorem.</p>
-                </div>
-            </div>
-            <div class="card col-12 col-md-4 text-center text-md-start mt-5">
-                <img src="img/css logo.png" alt="" class="img-fluid card-img-top" width="200">
-                <div class="card-body">
-                    <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas maxime nulla quisquam minima ipsum numquam possimus obcaecati unde iure voluptatum deserunt, aperiam quibusdam ipsa, illo quidem porro magnam. Vel, dolorem.</p>
-                </div>
-            </div>
-            <div class="card col-12 col-md-4 text-center text-md-start mt-5">
-                <img src="img/javascript_logo-removebg-preview.png" alt="" class="img-fluid card-img-top" width="200">
-                <div class="card-body">
-                    <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas maxime nulla quisquam minima ipsum numquam possimus obcaecati unde iure voluptatum deserunt, aperiam quibusdam ipsa, illo quidem porro magnam. Vel, dolorem.</p>
-                </div>
+            <div class="col-12 col-md-8">
+                <a href="#" class="">
+                    <img src="img/Chris_Portriat.JPG" alt="" class="img-fluid">
+                    <div class="hover-text">Bootstrap</div>
+                </a>
             </div>
         </div>
-    </div> 
+    </div>
 </body>
 </html>

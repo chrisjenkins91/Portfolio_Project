@@ -2,16 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
 
 
-h1, h2, p{
-    font-family: "Montserrat";
+body, p{
+    font-family: "Roboto Mono", sans-serif;
 }
 
-h3, p{
+body, h1, p, h2{
     color: #fffafa;
 }
 
+/*This gave the header a little more depth*/
+
+.hero-container h1,.hero-container h2, .hero-container h3{
+    color: #fffafa;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', sans-serif;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 3px rgba(255, 255, 225, 0.8), 0 0 3px rgba(255, 255, 255, 0.6)
+} 
+
 
 /*Navigation/Header Area*/
+
+.navbar li{
+    font-family: 'Roboto Mono', sans-serif;
+}
 
 .header-container, .navbar{
     background-color: #0a0a0A;
@@ -21,31 +36,86 @@ h3, p{
 /*Hero Container/Intro Area*/
 
 .hero-container{
+    padding-top: 15rem;
     background-color: #0a0a0A;
+
+}
+.logo-row{
+    padding-top: 15rem;
+    padding-bottom: 15rem;
 }
 
+.hero-pic img{
+    box-shadow: 0 4px 5px rgba(225, 225, 225, 0.3), 0 4px 5px rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-pic img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.8)
+}
+/*Animation for Hero Pic to fade in from the right*/
+
+.hero-pic img, .logo-pic img{
+    opacity: 0; 
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translate(50px); /*Makes image move from right to left*/
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.hero-container h1, .hero-container h2, .logo-text p{
+    opacity: 0;
+    animation: comeIn 1.5s forwards;
+}
+
+@keyframes comeIn {
+    0%{
+        opacity: 0;
+        transform: translate(-50px); /*Makes image move left to right*/
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Media Queries (Hero Area)*/
+
 @media (min-width:768px) {
-    .hero-container h3{
-        margin-left: 1em;
+    .hero-container h1, h2{
+        margin-left: 3rem;
     }
 }
 
 @media (min-width:768px) {
+    .hero-container h2{
+        margin-left: 3rem;
+    }
+}
+
+@media(min-width:768px) {
     .hero-pic img{
-        margin-right: 8em;
+        margin-right: 1rem;
     }
 }
 
 @media (min-width:768px) {
     .logo-pic img{
-        margin-left: 4em;
+        margin-left: 1rem;
     }
 }
-@media (min-width:768px) {
-    .logo-text p{
-        margin-right: 3em;
-    }
-}
+
 
 /*Skills Container Area*/
 
@@ -53,6 +123,20 @@ h3, p{
     background-color: #0a0a0A;
 }
 
+.skills-container .card{
+    box-shadow: 0 4px 5px rgba(225, 225, 225, 0.3), 0 4px 5px rgba(255, 255, 255, 0.8);
+}
+
+.skills-container .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.8)
+}
+
 .skills-container h1{
     color: #fffafa;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(60, 60, 60, 0.6)
 }

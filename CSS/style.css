@@ -6,7 +6,7 @@ body, p{
     font-family: "Roboto Mono", sans-serif;
 }
 
-body, h1, p, h2{
+body, h1, p, h2, h3{
     color: #fffafa;
 }
 
@@ -20,6 +20,15 @@ body, h1, p, h2{
     letter-spacing: 0.05em;
     text-shadow: 0 0 3px rgba(255, 255, 225, 0.8), 0 0 3px rgba(255, 255, 255, 0.6)
 } 
+
+.hero-container h3{
+    color: #fffafa;
+    font-weight: 500;
+    font-family: uppercase;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05em;
+
+}
 
 
 /*Navigation/Header Area*/
@@ -44,6 +53,8 @@ body, h1, p, h2{
     padding-top: 15rem;
     padding-bottom: 15rem;
 }
+
+
 
 .hero-pic img{
     box-shadow: 0 4px 5px rgba(225, 225, 225, 0.3), 0 4px 5px rgba(255, 255, 255, 0.8);
@@ -74,7 +85,7 @@ body, h1, p, h2{
 
 
 
-.hero-container h1, .hero-container h2, .logo-text p{
+.hero-container h1, .hero-container h2, .logo-text{
     opacity: 0;
     animation: comeIn 1.5s forwards;
 }
@@ -90,19 +101,25 @@ body, h1, p, h2{
     }
 }
 
+.hero-container .logo-text{
+    box-shadow: rgba(150, 16, 29, 0.5) 5px 5px, rgba(150, 16, 29, 0.3) 10px 10px, rgba(150, 16, 29, 0.2) 15px 15px, rgba(150, 16, 29, 0.1) 20px 20px, rgba(150, 16, 29, 0.05) 25px 25px;
+    border-radius: 25px;    
+}
+
+.hero{
+    box-shadow: rgb(150, 16, 29);
+}
+
+
 /*Media Queries (Hero Area)*/
 
 @media (min-width:768px) {
-    .hero-container h1, h2{
+    .hero-container h1, .hero-container h2, .hero-container h3{
         margin-left: 3rem;
     }
 }
 
-@media (min-width:768px) {
-    .hero-container h2{
-        margin-left: 3rem;
-    }
-}
+
 
 @media(min-width:768px) {
     .hero-pic img{
@@ -120,16 +137,14 @@ body, h1, p, h2{
 /*Skills Container Area*/
 
 .skills-container{
+    padding: 1px;
     background-color: #0a0a0A;
 }
 
-.skills-container .card{
-    box-shadow: 0 4px 5px rgba(225, 225, 225, 0.3), 0 4px 5px rgba(255, 255, 255, 0.8);
-}
 
-.skills-container .card:hover{
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.8)
+.css, .html, .javascript, .react, .bootstrap{
+    box-shadow: rgb(255, 255, 255) 0px 2px 4px, rgb(255, 255, 255) 0px 7px 13px -3px, rgb(255, 255, 255) 0px -3px 0px inset;
+    border-radius: 25px;
 }
 
 .skills-container h1{
@@ -139,4 +154,28 @@ body, h1, p, h2{
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.05em;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(60, 60, 60, 0.6)
+}
+
+
+/*Project Container Area*/
+
+.projects-container h1{
+    color: #fffafa;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(60, 60, 60, 0.6)
+}
+
+.projects-container{
+    background-color: #0a0a0A;
+}
+
+.projects-container a{
+    text-decoration: none;
+}
+
+.pic1, .pic2, .pic3{
+    box-shadow: rgb(255, 255, 255) 0px 60px 40px -2px;
 }
